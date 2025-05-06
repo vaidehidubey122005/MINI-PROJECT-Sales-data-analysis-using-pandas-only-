@@ -41,7 +41,7 @@ if 'TERRITORY' in df.columns:
 # Most Profitable Products
 if 'PRODUCTLINE' in df.columns:
     most_profitable_products = df.groupby('PRODUCTLINE')['SALES'].sum().sort_values(ascending=False).head(10)
-    print("\nTop 10 Most Profitable Products:")
+    print("\nTop 10 Profitable Products:")
     print(most_profitable_products)
 
 # Step 5: Sorting and Ranking
